@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="pragma" content="no-cache" />
+    <meta http-equiv="expires" content="-1" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Solidblue Hotspot</title>
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+
+  <body>
+    <div class="ie-fixMinHeight">
+      <div class="main">
+        <div class="wrap animated fadeIn">
+          <form action="http://192.168.77.6/login/proses.php" method="POST">
+            <input type="hidden" name="popup" value="true" />
+
+            <label>
+              <img class="ico" src="img/user.svg" alt="#" />
+              <input name="username" type="text" placeholder="Username" name="username" />
+            </label>
+
+            <label>
+                <img class="ico" src="img/email.svg" alt="#" />
+                <input name="email" type="text" placeholder="Email" name="email" />
+              </label>
+
+            <label>
+              <img class="ico" src="img/password.svg" alt="#" />
+              <input name="password" type="password" placeholder="Password" name="password" name="password"/>
+            </label>
+            <label>
+                <img class="ico" src="img/whatsapp.svg" alt="#" />
+                <input name="nomor" type="text" placeholder="No Whatsapp" name="nomor" />
+            </label>
+            
+            <label
+              >MAC Address yang di daftarkan
+              <br></br>
+              <input name="mac" type="text" placeholder="mac" name="mac" value="$(mac)" readonly
+            /></label>
+
+            <input type="submit" value="Daftar Sekarang" />
+    
+          </form>
+          <br></br>
+            <a href="login.html"><p class="info bt">Cancel</p></a>
+          
+          <p class="info bt">Powered by Solidblue</p>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
